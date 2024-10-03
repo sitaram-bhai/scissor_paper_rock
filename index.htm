@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCISSOR paper Rock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+            
+                <h1>GAME DEVELOPMENT WEBSITE SCISSOR PAPER ROCK</h1>
+
+        
+    </nav>
+    <main>
+        <h2 class="player"><P>PLAYER 1</P>vs<P>PLAYER 2</P></h2>
+        <div class="score"><h3>SCORE</h3><P id="scorecount">0</P></div>
+        <div class="score"><h3>SCORE</h3><P id="scorecount2">0</P></div>
+
+        <div class="mcontainers">
+            <div class="leftcontener mc">
+        <div class="main_img">
+          <img onclick="changeimg('./photos/seasor.png','logo1',1,2)" src="./photos/seasor.png" alt="icon" class="logo" id="logo1"  />
+          <img onclick="changeimg('./photos/PAPER.png','logo2',2,2)" src="./photos/PAPER.png" alt="icon" class="logo" id="logo2" />
+          <img onclick="changeimg('./photos/rock.png','logo3',3,2)" src="./photos/rock.png" alt="icon" class="logo" id="logo3" />
+        </div>
+
+        <div class="mainReasult">
+            <img src="./photos/seasor.png" alt="mlogo" class="mainlogo" id="mainlogo">
+        </div>
+
+      </div>
+
+      <div class="rightcontener mc">
+
+        <div class="mainReasult">
+            <img src="./photos/seasor.png" alt="mlogo" class="mainlogo" id="mainlogo2">
+        </div>
+        <div class="main_img">
+            <img onclick="changeimg2('./photos/seasor.png','logo4',1,1)" src="./photos/seasor.png" alt="icon" class="logo" id="logo4"  />
+            <img onclick="changeimg2('./photos/PAPER.png','logo5',2,1)" src="./photos/PAPER.png" alt="icon" class="logo" id="logo5" />
+            <img onclick="changeimg2('./photos/rock.png','logo6',3,1)" src="./photos/rock.png" alt="icon" class="logo" id="logo6" />
+          </div>
+  
+      </div>
+        </div>
+      <h1 id="result"></h1>
+      <button id="buttond" onclick="results()">Show result</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

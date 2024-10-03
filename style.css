@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    }
+    body{
+    height: 100vh;   width: 100%;
+   background: url("./photos/eimage.png");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    }
+    nav{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    nav h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    border: 2px solid rgb(38, 7, 174);
+    padding: 0px 10px 0px 10px;
+    color:rgb(255, 255, 255);
+    background:black;
+    border-radius: 50px;
+
+    }
+main{
+    height: 90vh;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+   flex-direction: column;
+
+}
+.player{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:80%;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: cursive;
+    color: white;
+
+}
+
+.score{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color: white;
+    top:200px;
+    left:50px;
+    background-color: rgb(111, 3, 104);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.score p{
+    background: orange;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+}
+
+.score:nth-child(2){
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color: white;
+    top:200px;
+    left: 950px;
+    background-color: rgb(124, 37, 37);
+}
+.mcontainers{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mc{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.leftcontener{
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+.logo{
+    height:10vh;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+    cursor:pointer;
+    
+
+}
+
+.main_img {
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+
+.mc .mainReasult{
+    height: 40vh;
+    width: 60%;
+
+}
+
+.mc .mainReasult .main_img{
+    height: 100%;
+    width: 70%;
+}
+
+
+.mc .mainReasult .mainlogo{
+    height: 100%;
+    width: 100%;
+}
+
+#result{
+    color: white;
+    font-family:cursive;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom:10px;
+    left:500px;
+    transition: all 1s  ;
+}
+
+#buttond{
+    background: rgb(22, 1, 89);
+    box-shadow: 2px 1px 1px  rgb(255, 255, 255);
+    border: none;
+    height: 7vh;
+    width: 12vw;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 300px;
+    bottom:10px;
+}
